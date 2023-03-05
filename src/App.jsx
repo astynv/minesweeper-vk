@@ -89,13 +89,13 @@ const squareProperty = (squares, row_i, row_j, property, value) => {
 
 let minutes = 40;
 
-
 const App = () => {
  
   
   const [squares, setsquares] = useState(createBoard());
   const [mineCounter, setMineCounter] = useState(BOMBS_AMOUNT);
   const [seconds, setTime] = useState(0);
+  const [minutes, setMinutes] = useState(40);
   const [emotion, setEmotion] = useState(emotions.normal);
   const [isOK, setIsOK] = useState(false);
   const [win, setWin] = useState(false);
@@ -107,8 +107,8 @@ const App = () => {
       const interval = setInterval(() => {
           if (seconds < 1000) {
             setTime(seconds + 1);
-            if (seconds % 60 == 0) {
-            minutes = minutes - 1;
+          if (seconds % 60 == 0) {
+            setMinutes(minutes-1);
           }
           }}, 1000); 
        
@@ -118,7 +118,7 @@ const App = () => {
         
       };
     }
-  }, [seconds, isOK, win, lose]);
+  }, [seconds, minutes, isOK, win, lose]);
 
   const handleMouseDown = e => {
     if (win || lose) {
@@ -297,6 +297,7 @@ const App = () => {
       setIsOK(false);
       setMineCounter(BOMBS_AMOUNT);
       setTime(0);
+      setMinutes(40);
       setLose(false);
       setWin(false);
       setEmotion(emotions.normal);

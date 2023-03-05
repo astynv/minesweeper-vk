@@ -5,4 +5,4 @@
 - npm install
 - npm run dev
 
-![image](https://user-images.githubusercontent.com/56248055/222978498-cd08f186-41f1-4c86-897e-64f400d0c2fd.png)
+![image](https://user-images.githubusercontent.com/56248055/222980934-9fb4e116-20e3-44d0-a6e0-a75b77d0c0d0.png)

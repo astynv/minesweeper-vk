@@ -1,0 +1,149 @@
+
+.App {
+  background: #c2c2c2;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #835c6f;
+  padding: 16px;
+}
+
+.Header {
+  background: #c0c0c0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #835c6f;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emoji {
+  width: 52px;
+  height: 52px;
+  border-width: 4px;
+  border-style: solid;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: #a06a87;
+  border-bottom-color: #7b4765;
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.emoji:active {
+  border-top-color: #a06a87;
+  border-left-color: #7b4765;
+  border-right-color: white;
+  border-bottom-color: white;
+}
+
+.Body {
+  margin-top: 16px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #835c6f;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.Timer {
+  width: 80px;
+  height: 48px;
+  background: black;
+  font-size: 40px;
+  text-align: center;
+  color: #963d3b;
+}
+
+.Display {
+  width: 120px;
+  height: 50px;
+  background: #c0c0c0;
+  font-size: 38px;
+  text-align: center;
+  color: #7d110f;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Button {
+  width: 35px;
+  height: 35px;
+  border-width: 3px;
+  border-style: solid ;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: #835c6f;
+  border-bottom-color: #835c6f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Button:active {
+  border-top-color: #835c6f;
+  border-left-color: #835c6f;
+  border-right-color: white;
+  border-bottom-color: white;
+}
+
+.Button span {
+  display: block;
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+.Button.visible {
+  border-color: #7b7b7b;
+  border-width: 1px;
+}
+
+.Button.red {
+  background: rgb(154, 46, 46);
+}
+
+.Button.visible.value-0 {
+  background: #d4d0d0;
+}
+
+.value-1 {
+  color: rgb(60, 60, 114);
+  
+}
+
+.value-2 {
+  color: rgb(23, 102, 23);
+}
+
+.value-3 {
+  color: rgb(139, 44, 44);
+}
+
+.value-4 {
+  color: rgb(84, 3, 106);
+}
+
+.value-5 {
+  color: rgb(4, 3, 72);
+}
+
+.value-6 {
+  color: rgb(206, 174, 31);
+}
+
+.value-7 {
+  color: rgb(109, 54, 54);
+}
+
+.value-8 {
+  color: rgb(46, 13, 13);
+}

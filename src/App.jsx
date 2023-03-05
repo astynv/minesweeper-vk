@@ -87,7 +87,7 @@ const squareProperty = (squares, row_i, row_j, property, value) => {
   );
 };
 
-const minutes = 40;
+let minutes = 40;
 
 
 const App = () => {

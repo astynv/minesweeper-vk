@@ -1,7 +1,7 @@
 # minesweeper-vk
 Профильное задание<br />
 Как запустить: 
-- git clone (ccылка репозитория)
+- git clone (ccылка на репозиторий)
 - npm install
 - npm run dev
 

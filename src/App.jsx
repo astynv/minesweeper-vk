@@ -87,6 +87,7 @@ const squareProperty = (squares, row_i, row_j, property, value) => {
   );
 };
 
+const minutes = 40;
 
 
 const App = () => {
@@ -106,6 +107,9 @@ const App = () => {
       const interval = setInterval(() => {
           if (seconds < 1000) {
             setTime(seconds + 1);
+            if (seconds % 60 == 0) {
+            minutes = minutes - 1;
+          }
           }}, 1000); 
        
       

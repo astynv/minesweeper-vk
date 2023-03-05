@@ -417,7 +417,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="Header">
-        <Timer value={40} />
+        <Timer value={minutes} />
         <div className="emoji" onClick={handleEmojiClick}>
           <span role="img" aria-label="smiley">
             {emotion}
